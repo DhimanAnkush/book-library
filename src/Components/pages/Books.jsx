@@ -4,7 +4,13 @@ import { useEffect, useState } from "react";
 import { BookCard } from "./BookCard";
 import styled, { css } from "styled-components";
 
-export const Grid = styled.div``;
+export const Grid = styled.div({
+  display:"grid",
+  gridTemplateColumns: "30% 30% 30%",
+  gridGap: "2%"
+});
+
+
  /* add required style here
 `; */
 

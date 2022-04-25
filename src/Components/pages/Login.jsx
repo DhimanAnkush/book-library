@@ -8,9 +8,13 @@ import { AuthContext } from "../context/AuthContext";
 import { Form } from "./EditBookData";
 
 // add input styling
-export const Input = styled.input`
+export const Input = styled.input({
+  width: "29%",
+  height:"30px",
+  borderRadius: "5px",
+  padding:"10px"
+})
  
-`;
 
 
 export const Login = () => {

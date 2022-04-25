@@ -4,9 +4,18 @@ import styled from "styled-components";
 import { Input } from "./Login";
 
 // add style for form
-export const Form = styled.form``;
+export const Form = styled.form({
+  margin: "20px",
+  width:"100%"
+});
 // add style for text area
-export const Textarea = styled.textarea``;
+export const Textarea = styled.textarea({
+  margin:"20px",
+  width:"29%",
+  height:'100px',
+  borderRadius: "5px",
+  padding:"10px"
+});
 
 export const EditBookData = () => {
 
@@ -34,11 +43,11 @@ export const EditBookData = () => {
         <Input
           data-testid="update-form-thumbnail"
           placeholder="Enter updated thumbnail url"
-        />
+        /><br/>
         <Textarea
           data-testid="update-form-description"
           placeholder="Update long Description"
-        />
+        /><br/>
         <Input dat-testid="update-form-submit" type="submit" value="Update" />
       </Form>
     </>
